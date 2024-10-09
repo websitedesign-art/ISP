@@ -7,6 +7,7 @@
    display: flex;
    align-items: center;
    padding: 20px;
+   font-weight: bold;
 }
 nav{
    flex: 1;
@@ -22,10 +23,10 @@ nav ul li{
 }
 a{
    text-decoration: none;
-   color: #ccc;
+   color: #000;
 }
 p{
-   color: #ccc;
+   color: #000;
 }
 .container{
    max-width: 1300px;
@@ -65,10 +66,10 @@ body{
    transition: background 0.5s;
 }
 .btn:hover{
-   background: #563434;
+   background: #c1121f;
 }
 .header{
-   background: radial-gradient(#fff,#7fffd4);
+   background: radial-gradient(#fff,#fff);
 }   
 .header .row{
    margin-top: 70px;
@@ -396,7 +397,6 @@ ul{
       position: absolute;
       top: 70px;
       left: 0;
-      background: #333;
       width: 100%;
       transition: max-height 0.5s;
    }
