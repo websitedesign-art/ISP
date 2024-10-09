@@ -22,10 +22,10 @@ nav ul li{
 }
 a{
    text-decoration: none;
-   color: #555;
+   color: #ccc;
 }
 p{
-   color: #555;
+   color: #ccc;
 }
 .container{
    max-width: 1300px;
@@ -84,7 +84,7 @@ body{
 .col-3 img{
    width: 100%;
 }
-.small-container{
+.products{
    max-width: 1080px;
    margin: auto;
    padding-left: 25px;
@@ -253,6 +253,86 @@ form a{
    color: #555;
    font-size: 16px;
 }
+/*---------- form Container ----*/
+.form-container{
+   background-color: #ffffff;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.1) ;
+   width: 100%;
+   max-width: 400px;
+   text-align: center;
+
+}
+/*------ form Title ----*/
+.form-container h2{
+   margin-bottom: 20px ;
+   color:#333;
+   font-size: 24px;
+   font-weight: bold;
+}
+/*Input Group*/
+.input-group{
+   margin-bottom: 20px;
+   text-align: left;
+}
+.input-group label{
+   display: block;
+   color: #555;
+   font-size: 14px;
+   margin-bottom: 5px;
+}
+.input-group input{
+   width: 100%;
+   padding: 12px;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   box-sizing: border-box;
+   font-size: 16px;
+   transition: border-color 0.3s;
+}
+.input-group input:focus{
+   border-color: #3498db;
+   outline: none;
+
+}
+/* Password Container */
+.password-container{
+   position: relative ;
+   display: flex;
+   align-items: center;
+
+}
+.password-container input{
+   width: 100%;
+   padding-right: 40px;
+}
+.toggle-password{
+   position: absolute;
+   right: 10px;
+   cursor: pointer;
+   font-size: 18px;
+   color: #888;
+   transition: color 0.3s;
+}
+.toggle-password:hover{
+   color: #3498db;
+}
+/* Submit Button */
+.submit-btn{
+   width: 100%;
+   padding: 12px;
+   background-color: #780000;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+.submit-btn:hover{
+   background-color: #c1121f;
+}
 /*---------- footer ----------*/
 .footer{
    background: #000;
@@ -273,6 +353,11 @@ form a{
 }
 .footer-col-1{
    flex-basis: 30%;
+   
+}
+.footer-col-1 .a{
+   width: 25px;
+   height: 25px;
 }
 .footer-col-2{
    flex: 1;

@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
     </head>
     <body>
@@ -23,11 +25,13 @@
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>
+                        <img src="46.jpg" width="30px" height="30px">
+                        <img src="" class="menu-icon" onclick="menutoggle()">
                     </ul>
                 </nav>
-                <img src="46.jpg" width="30px" height="30px">
                 <img src="" class="menu-icon" onclick="menutoggle()">
-            </div>
+</div>
+               
             <div class="row">
                 <div class="col-2">
                     <h1>Truly Fast & Unlimited!</h1>
@@ -70,7 +74,7 @@
        </div>
        </div>
        <!-------- featured products   --------->
-       <div class="small-container">
+       <div class="Products">
              <h2 class="title">SERVICES WE OFFER!!</h2>
              <div class="row">
                 <div class="col-4">
@@ -117,47 +121,33 @@
              <h2 class="title">Available Packages!!</h2>
              <div class="row">
                 <div class="col-4">
-                    <img src="36.jpg">
-                    <h4>6 MBPS == KSH.2,000/=<br> 8MBPS == KSH.2,500/=</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-
+                            <img src="48.jpg">
+                            <h4>KES.2,000</h4>
+                        </div>
+                        <div class="col-4">
+                            <img src="49.jpg">
+                            <h4>KES.2,500</h4>
+                        </div>
+                        <div class="col-4">
+                            <img src="50.jpg">
+                            <h4>KES.3,000</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="51.jpg">
+                            <h4>KES.4,000</h4>
+                        </div>
+                        <div class="col-4">
+                            <img src="52.jpg">
+                            <h4>KES.4,999</h4>
+                        
+                        </div>
+                        <div class="col-4">
+                            <img src="53.jpg">
+                            <h4>KES.7,999</h4>
+                        </div> 
                     </div>
-                    <p>Best For: Web Browsing & HD Video Streaming</p>
-                </div>
-                <div class="col-4">
-                    <img src="37.jpg">
-                    <h4>10 MBPS == KSH.3,000/=<br> 12 MBPS == KSH.3,499/=</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <i class="fa fa-star-o"></i>
-
-                    </div>
-                    <p>Best For: Web Browsing & HD Video Streaming<br>used by developing company</used></p>
-                </div>
-                <div class="col-4">
-                    <img src="38.jpg">
-                    <h4>20 MBPS == KSH.4,999/= <br> 40 MBPS == KSH.7,999/=</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-
-                    </div>
-                    <p>For online activities like streaming and schoolwork, it’s important to find an ISP with a suitable plan.</p>
-                </div>
-             </div>
-
-            </div>
+                    
+                       
             <!-------- offer --------->
             <div class="offer">
                 <div class="small-container">
@@ -174,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            
+           
             <!-------- testimonial --------->
             <div class="testimonial">
                 <div class="small-container">
@@ -224,49 +214,43 @@
                     </div>
                 </div>
             </div>
-            <!-------- account-page --------->
-            <div class="account-page">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="36.jpg" width="100%">
+                <div class="form-container">
+                    <h2>Log in your Account</h2>
+                    <!---- Sign in form ----->
+                    <form action ="#" method="post">
+                        <!--- Email Field ---->
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required/>
                         </div>
-                        <div class="col-2">
-                            <div class="form-container">
-                                <div class="form-btn">
-                                    <span onclick="login()">Login</span>
-                                    <span onclick="register()">Register</span>
-                                    <hr id="Indicator">
-                                </div>
-                                <form id="Loginform">
-                                    <input type="text" placeholder="Username">
-                                    <input type="password" placeholder="Password">
-                                    <button type="submit" class="btn">Login</button>
-                                    <a href="">Forgot password</a> 
-                                </form>
-                                <form id="Regform">
-                                    <input type="text" placeholder="Username">
-                                    <input type="email" placeholder="Email">
-                                    <input type="password" placeholder="Password">
-                                    <button type="submit" class="btn">Register</button> 
-                                </form>
-
+                        <!--- Password Field with Show/Hide Icon -->
+                        <div class="input-group">
+                            <label for ="password">Password</label>
+                            <div class="password-container">
+                                <input type="password" id="password" name="password" required/>
+                                <span class="toggle-password" id="togglepassword">&#128065</span>
                             </div>
+
                         </div>
-                    </div>
+                        <!--- Submit Button --->
+                        <button class="submit-btn">Sign In</button>
+                    </form>
+                        
                 </div>
+                <script src="script.js"></script>
 
             </div>
             <div class="google-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8181643291414!2d37.07581637435432!3d0.01602296441205957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1787f64a3cecd057%3A0x374c3ae5e54bdd65!2sLaipha%20House%2C%20Nanyuki-Rumuruti%20Rd%2C%20Nanyuki!5e0!3m2!1sen!2ske!4v1725956545658!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+           </div>
             <!-------- footer --------->
             <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="footer-col-1">
                             <h3>Whatsapp Us Today</h3>
-                            <a aria-label="Chat on WhatsApp" href="https://wa.me/+254725387774"> <img alt="Chat on WhatsApp" src="20.jpg" >
+                            <p>+254725387774</p>
+                            <a aria-label="Chat on WhatsApp" href="https://wa.me/+254725387774"> <img alt="Chat on WhatsApp" src="20.jpg" width="130px" height="130px" >
                             </a>
                         </div>
                         <div class="footer-col-2">
@@ -298,39 +282,9 @@
                 </div>
 
             </div>
-            <!-------- js for toggle menu ------->
-            <script>
-                var Menuitems = document.getElementById("Menuitems");
+            
 
-                Menuitems.style.maxHeight = "0px";
-                function menutoggle(){
-                    if(Menuitems.style.maxHeight == "0px")
-                        {
-                             Menuitems.style.maxHeight = "200px";
-                        }
-                    else 
-                        {
-                        Menuitems.style.maxHeight = "0px";
-
-                        }
-
-                }
-            </script>
-            <!------- js for toggle form --------->
-            <script>
-                var LoginForm = document.getElementById("LoginForm");
-                var Regform = document.getElementById("RegForm");
-                var Indicator = document.getElementById("Indicator");
-
-                    function register(){
-                        Regform.style.transform = "translateX(0px)";
-                        LoginForm.style.transform = "translateX(0px)";
-                    }
-                    function login(){
-                        Regform.style.transform = "translateX(300px)";
-                        LoginForm.style.transform = "translateX(300px)";
-                    }
-            </script>
+            
     </body>
 </html>
     
